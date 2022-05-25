@@ -1,0 +1,13 @@
+messages:
+  help:
+    brutalMode: "<gold>Brutal mode: If all items of a material should be removed, not only one itemstack. Usage: /li brutal [true | false]</gold>"
+    eChestRemove: "<gold>EChest Remove: If items to remove should include echest items\n Usage: /li ecr [true | false]</gold>"
+    enabled: "<gold>Enabled: If the plugin is enabled or not. Usage: /li enabled [true | false]</gold>"
+  reload: "<green>Reloaded config file.</green>"
+  noPerms: "<red>You don't have permission to use this command.</red>"
+  success: "<green>Command successful!</green>"
+
+options:
+  brutalMode: false
+  eChestRemove: true
+  enabled: true
