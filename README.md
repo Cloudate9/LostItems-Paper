@@ -16,7 +16,9 @@ permissions:
   lostitems.configure:
     description: If one can configure lost items
     default: op
-
+  lostitems.updater:
+    description: If one can view update messages for this plugin
+    default: op
 ```
 ##### Installation
 Download this plugin, and drop it into your server's plugin folder!

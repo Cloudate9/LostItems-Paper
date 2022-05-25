@@ -87,5 +87,11 @@ spigot {
             defaults = "op"
         }
     }
+    permissions {
+        create("lostitems.updater") {
+            description = "If one can view update messages for this plugin"
+            defaults = "op"
+        }
+    }
     excludeLibraries = listOf("*")
 }
