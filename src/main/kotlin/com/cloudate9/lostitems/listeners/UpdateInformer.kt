@@ -21,10 +21,10 @@ class UpdateInformer(
         if (config.getBoolean("updateCheck") && updateChecker.updateFound) {
             e.player.sendMessage(
                 miniMessage
-                    .deserialize(config.getString("message.miniMessage.updateFound")!!)
+                    .deserialize(config.getString("message.updateFound")!!)
                     .clickEvent(
                         ClickEvent.openUrl(
-                            "https://www.curseforge.com/minecraft/bukkit-plugins/insta-mine-deepslate/"
+                            "https://www.curseforge.com/minecraft/bukkit-plugins/lost-items/"
                         )
                     )
             )

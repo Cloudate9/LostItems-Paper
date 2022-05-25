@@ -6,6 +6,8 @@ messages:
   reload: "<green>Reloaded config file.</green>"
   noPerms: "<red>You don't have permission to use this command.</red>"
   success: "<green>Command successful!</green>"
+  updateFound: "<green>can be updated at https://www.curseforge.com/minecraft/bukkit-plugins/lost-items/\n 
+  If you don't see the update yet, come back in 24-48 hours. It should be ready by then.</green>"
 
 options:
   brutalMode: false
