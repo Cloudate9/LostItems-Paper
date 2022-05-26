@@ -12,6 +12,7 @@ class RemoveItem(val plugin: Plugin) : Listener {
 
     @EventHandler
     fun onPlayerDamage(e: EntityDamageEvent) {
+        if (e.finalDamage == 0.0) return
         if (e.entityType != EntityType.PLAYER) return
 
         val player = e.entity as Player
@@ -57,7 +58,7 @@ class RemoveItem(val plugin: Plugin) : Listener {
 
         if (config.getBoolean("options.eChestRemove")) {
             player.enderChest.contents?.forEachIndexed { index, item ->
-                item?.let { itemNums.add(index + 40) } //40 is the max size for the normal player inventory
+                item?.let { itemNums.add(index + 41) } //40 is the max size for the normal player inventory, echest is 0 indexed
             }
         }
 
@@ -69,7 +70,7 @@ class RemoveItem(val plugin: Plugin) : Listener {
                 }
             } else {
                 player.enderChest.contents = player.enderChest.contents?.apply {
-                    this[it - 40] = null
+                    this[it - 41] = null
                 }
             }
         }

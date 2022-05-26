@@ -21,7 +21,7 @@ class UpdateInformer(
         if (config.getBoolean("updateCheck") && updateChecker.updateFound) {
             e.player.sendMessage(
                 miniMessage
-                    .deserialize(config.getString("message.updateFound")!!)
+                    .deserialize(config.getString("messages.updateFound")!!)
                     .clickEvent(
                         ClickEvent.openUrl(
                             "https://www.curseforge.com/minecraft/bukkit-plugins/lost-items/"

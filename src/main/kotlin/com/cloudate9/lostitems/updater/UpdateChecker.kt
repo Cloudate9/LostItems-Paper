@@ -20,7 +20,7 @@ class UpdateChecker(private val plugin: Plugin) {
                     val readGit = Scanner(
                         InputStreamReader(
                             URL(
-                                "https://raw.githubusercontent.com/Cloudate9/InstaMineDeepslate/master/build.gradle.kts"
+                                "https://raw.githubusercontent.com/Cloudate9/LostItems-Paper/master/build.gradle.kts"
                             ).openStream()
                         )
                     )
@@ -56,8 +56,7 @@ class UpdateChecker(private val plugin: Plugin) {
                     plugin.logger.info(
                         "can be updated at " +
                                 "https://www.curseforge.com/minecraft/bukkit-plugins/lost-items/\n" +
-                                "If you don't see the update yet, come back in 24-48 hours. It should be ready by then.",
-
+                                "If you don't see the update yet, come back in 24-48 hours. It should be ready by then."
                         )
                 } catch (ex: IOException) {
                     plugin.logger.info(
