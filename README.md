@@ -3,7 +3,7 @@
 ---
 Feeling especially means today? How about losing items whenever you take damage? >:)  
 It's a nice challenge that dissuades taking damage, but isn't as hard as something like Half Heart Minecraft
-challenges (e.g. HHH)
+challenges (e.g. HHH). I heard that gaps and shields help to make this challenge easier :O
 
 ### Commands
 
