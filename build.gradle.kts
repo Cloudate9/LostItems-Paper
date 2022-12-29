@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     api(bStats("3.0.0"))
-    api("io.insert-koin:koin-core:3.2.1")
+    api("io.insert-koin:koin-core:3.3.2")
     compileOnly(paper("1.18.2"))
     testApi(kotlin("test"))
 }
